@@ -1,0 +1,164 @@
+{
+    "Create Response Ext.decode line": {
+        "scope": "javascript",
+        "prefix": "jdc",
+        "body": [
+            "const json = Ext.decode(response.responseText, true);"
+        ],
+        "description": "Create Response Ext.decode line."
+    },
+    "Put Ext Debug Tag": {
+        "scope": "javascript",
+        "prefix": "deb",
+        "body": [
+            "//<debug>",
+            "$0",
+            "//</debug>"
+        ],
+        "description": "Put Ext Debug Tag."
+    },
+    "Put Ext Debugger": {
+        "scope": "javascript",
+        "prefix": "dg",
+        "body": [
+            "//<debug>",
+            "debugger;",
+            "//</debug>",
+            "$0"
+        ],
+        "description": "Put Ext Debug Tag."
+    },
+    "Me This": {
+        "scope": "javascript",
+        "prefix": "cmt",
+        "body": [
+            "const me = this;$0",
+        ],
+        "description": "Declare const this as me."
+    },
+    "Get View": {
+        "scope": "javascript",
+        "prefix": "gvw",
+        "body": [
+            "const view = me.getView();$0",
+        ],
+        "description": "Get View"
+    },
+    "Get ViewModel": {
+        "scope": "javascript",
+        "prefix": "gvm",
+        "body": [
+            "const viewModel = me.getViewModel();$0"
+        ],
+        "description": "Get ViewModel"
+    },
+    "Get General": {
+        "scope": "javascript",
+        "prefix": "gvg",
+        "body": [
+            "const me = this;",
+            "const view = me.getView();",
+            "const viewModel = me.getViewModel();$0"
+        ],
+        "description": "Get ViewModel"
+    },
+    "Each": {
+        "scope": "javascript",
+        "prefix": "eac",
+        "body": [
+            "Ext.each(${1:collection}, function (item, index) {",
+            "\t$0",
+            "});"
+        ],
+        "description": "Ext JS Each"
+    },
+    "Ajax": {
+        "scope": "javascript",
+        "prefix": "aj",
+        "body": [
+            "Ext.Ajax.request({",
+            "\turl: '${1:url/data}',",
+            "\tmethod: '${2:method}',",
+            "\tscope: me,",
+            "\tsuccess: me.on${2:Ajax}Success,",
+            "\tfailure: me.on${3:Ajax}Failure,",
+            "});$0"
+        ],
+        "description": "Ext Ajax REquest"
+    },
+    "Down Component": {
+        "scope": "javascript",
+        "prefix": "dcp",
+        "body": [
+            "me.${1:queryComponent} = me.down('${1:queryComponent}');"
+        ],
+        "description": "Down Component"
+    },
+    "Lookup Component": {
+        "scope": "javascript",
+        "prefix": "lcp",
+        "body": [
+            "me.${1:queryComponent} = me.lookup('${1:queryComponent}');"
+        ],
+        "description": "Lookup Component"
+    },
+    "logS": {
+        "scope": "javascript",
+        "prefix": "log",
+        "body": [
+            "console.log(${1:logText});"
+        ],
+        "description": "Log"
+    },
+    "Ext.log": {
+        "scope": "javascript",
+        "prefix": "extl",
+        "body": [
+            "Ext.log({",
+            "\tmsg: '${1:logText}',",
+            "\tlevel: 'info',",
+            "\tstack: true",
+            "});"
+        ],
+        "description": "Ext.log"
+    },
+    "NewViewModel": {
+        "scope": "javascript",
+        "prefix": "newvm",
+        "body": [
+            "Ext.define('${1:app}.view.${2:context}.${3:feature}ViewModel', {",
+            "\textend: 'Ext.app.ViewModel',",
+            "\talias: 'viewmodel.${4:featureAlias}',",
+            "\tdata: {",
+            "\t\t$0",
+            "\t},",
+            "\tstores: {",
+            "\t},",
+            "\tformulas: {",
+            "\t}",
+            "});"
+        ],
+        "description": "Generate a new viewModel template"
+    },
+    "NewViewController": {
+        "scope": "javascript",
+        "prefix": "newvc",
+        "body": [
+            "Ext.define('${1:app}.view.${2:context}.${3:feature}Controller', {",
+            "\textend: 'Ext.app.ViewController',",
+            "\talias: 'controller.${4:featureAlias}',",
+            "\tinit: function () {",
+            "\t\t$0",
+            "\t},",
+            "\tinitViewModel: function (viewModel) {",
+            "\t\t",
+            "\t},",
+            "\tdestroy: function () {",
+            "\t\tconst me = this;",
+            "\t\tme.callParent([arguments]);",
+            "\t}",
+            "});"
+        ],
+        "description": "Generate a new controller template"
+    }
+}
