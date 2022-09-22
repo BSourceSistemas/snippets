@@ -3,6 +3,9 @@ A common snippets used in BSource projects.
 
 ##  Javascript
 ### [Ext JS](https://github.com/BSourceSistemas/snippets/blob/main/javascript/ext.code-snippets)
+
+Import this snippet file on your vscode
+
 This is a snippet that we use during our project developments with [Ext JS](https://www.sencha.com/products/extjs/), there are several interesting routines that are used in our day like the snippet **dg**.
 
 ``` javascript

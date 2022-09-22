@@ -106,7 +106,8 @@
         "scope": "javascript",
         "prefix": "log",
         "body": [
-            "console.log(${1:logText});"
+            "console.log(${1:logText});",
+            "$0"
         ],
         "description": "Log"
     },
@@ -118,7 +119,8 @@
             "\tmsg: '${1:logText}',",
             "\tlevel: 'info',",
             "\tstack: true",
-            "});"
+            "});",
+            "$0",
         ],
         "description": "Ext.log"
     },
@@ -160,5 +162,94 @@
             "});"
         ],
         "description": "Generate a new controller template"
+    },
+    "NewView": {
+        "scope": "javascript",
+        "prefix": "newvw",
+        "body": [
+            "Ext.define('${1:app}.view.${2:context}.${3:feature}Controller', {",
+            "\textend: '${4:extendView}',",
+            "\txtype: '${5:xtype}',",
+            "\titems: [{",
+            "\t\t$0",
+            "\t}],",
+            "});"
+        ],
+        "description": "Generate a new view template"
+    },
+    "MeCallParent": {
+        "scope": "javascript",
+        "prefix": "mcap",
+        "body": [
+            "me.callParent([arguments]);",
+            "$0"
+        ],
+        "description": "Generate a me call parent arguments"
+    },
+    "Ext.Ajax.request.successMethodCallback": {
+        "scope": "javascript",
+        "prefix": "easuccess",
+        "body": [
+            "${1:functionName}Success: function (response, eOpts) {",
+            "\tconst json = response.responseText ? Ext.decode(response.responseText, true) : {};",
+            "\t$0",
+            "}"
+        ],
+        "description": "Generate a function callback with \"Success\" suffix."
+    },
+    "Ext.Ajax.request.failureMethodCallback": {
+        "scope": "javascript",
+        "prefix": "eafailure",
+        "body": [
+            "${1:functionName}Failure: function (response, eOpts) {",
+            "\tconst json = response.responseText ? Ext.decode(response.responseText, true) : {};",
+            "\t$0",
+            "}"
+        ],
+        "description": "Generate a function callback with \"Failure\" suffix."
+    },
+    "HboxLayout": {
+        "scope": "javascript",
+        "prefix": "lhb",
+        "body": [
+            "layout:{",
+            "\ttype: 'hbox',",
+            "\talign: 'stretch',",
+            "\tpack: 'start'",
+            "}$0"
+        ],
+        "description": "Generate a HBox layout config."
+    },
+    "VboxLayout": {
+        "scope": "javascript",
+        "prefix": "lvb",
+        "body": [
+            "layout:{",
+            "\ttype: 'vbox',",
+            "\talign: 'stretch',",
+            "\tpack: 'start'",
+            "}$0"
+        ],
+        "description": "Generate a VBox layout config."
+    },
+    "CardLayout": {
+        "scope": "javascript",
+        "prefix": "lcard",
+        "body": [
+            "layout:{",
+            "\ttype: 'card'",
+            "}$0"
+        ],
+        "description": "Generate a Card layout config."
+    },
+    "FitLayout": {
+        "scope": "javascript",
+        "prefix": "lfit",
+        "body": [
+            "layout:{",
+            "\ttype: 'fit'",
+            "}$0"
+        ],
+        "description": "Generate a Fit layout config."
     }
 }
