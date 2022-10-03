@@ -39,15 +39,15 @@ Remembering that [BSource](https://www.bsource.com.br/) is a company working on 
 
 ##  .NET
 
-Onde colocar os snippets: %HOMEPATH%\AppData\Roaming\Code\User\snippets
+Snippets path: %HOMEPATH%\AppData\Roaming\Code\User\snippets
 
-Comandos para snippets dotnet:
+Call snippets on vscode:
 
-dtos	-> Gera uma classe DTO.<br>
-res	-> Gera uma classe Response.<br>
-req	-> Gera uma classe Request.<br>
-irepo	-> Gera uma interface ppara repositório.<br>
-hand	-> Gera uma classe Request Handler.<br>
-prepos	-> Gera um repositório para o método POST.<br>
-repos	-> Gera um repositório para todos os outros métodos HTTP.<br>
-control -> Gera um controller com todos os métodos HTTP.<br>
+dtos	-> Create a DTOs class.<br>
+res	-> Create a response class.<br>
+req	-> Create a request class.<br>
+irepo	-> Create a repository interface.<br>
+hand	-> Create a request handler class.<br>
+prepos	-> Create a post method repository class.<br>
+repos	-> Create a generic method repository class.<br>
+control -> Create a controller class for http requests.<br>
