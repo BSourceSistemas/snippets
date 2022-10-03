@@ -43,7 +43,7 @@ Onde colocar os snippets: %HOMEPATH%\AppData\Roaming\Code\User\snippets
 
 Comandos para snippets dotnet:
 
-dtos	-> Gera uma classe DTO.
+dtos	-> Gera uma classe DTO.<br>
 res	-> Gera uma classe Response.
 req	-> Gera uma classe Request.
 irepo	-> Gera uma interface ppara repositório.
