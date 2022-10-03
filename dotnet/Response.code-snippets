@@ -1,0 +1,32 @@
+{
+	"Print to console": {
+		"scope": "csharp",
+		"prefix": "res",
+		"body": [
+			"using MediatR;",
+			"using <PROJECT>.Domain.Responses.Generics;",
+			"using System.Collections.Generic;",
+			"using System.Threading.Tasks;",
+			"",
+			"namespace <PROJECT>.Domain.Responses.<PATH>.<NAME>",
+			"{",
+			"    public class <NAME>Response : RowsResponse<<NAME>DTO>",
+			"                                , INotification",
+			"    {",
+			"        public <NAME>Response(Task<List<<NAME>DTO>> toListAsync) : base(false, <STRING>)",
+			"        {",
+			"        }",
+			"",
+			"        public <NAME>Response (bool success, string message) : base(success, message)",
+			"        {",
+			"        }",
+			"",
+			"        public <NAME>Response (IEnumerable<<NAME>DTO> rows) : base(rows)",
+			"        {",
+			"        }",
+			"    }",
+			"}"
+		],
+		"description": "Create a response"
+	}
+}

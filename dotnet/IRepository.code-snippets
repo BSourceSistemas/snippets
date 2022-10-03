@@ -1,0 +1,18 @@
+{
+	"Print to console": {
+		"scope": "csharp",
+		"prefix": "irepo",
+		"body": [
+			"using System.Threading.Tasks;",
+			"",
+			"namespace <PROJECT>.Domain.Interfaces.Repository.<PATH>.<NAME>",
+			"{",
+			"    public interface I<NAME>Repository",
+			"    {",
+			"        Task<<NAME>Response> Handle(<NAME>Request request);",
+			"    }",
+			"}"
+		],
+		"description": "Create a interface repository"
+	}
+}

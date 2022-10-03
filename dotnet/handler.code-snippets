@@ -1,0 +1,37 @@
+{
+	"Print to console": {
+		"scope": "csharp",
+		"prefix": "hand",
+		"body": [
+			"using MediatR;",
+			"using System.Threading;",
+			"using System.Threading.Tasks;",
+			"",
+			"namespace <PROJECT>.RequestHandler.<PATH>.<CLASS>",
+			"{",
+			"    public class <NAME>RequestHandler: IRequestHandler<<NAME>Request",
+			"                                     , <NAME>Response>",
+			"    {",
+			"        private readonly I<NAME>Repository _repository;",
+			"        private readonly IMediator _mediator;",
+			"",        
+			"        public <NAME>RequestHandler( I<NAME>Repository repository",
+			"                                   , IMediator mediator)",
+			"       {",
+			"            _repository = repository;",
+			"            _mediator = mediator;",
+			"        }",
+			"",        
+			"        public async Task<<NAME>Response> Handle( <NAME>Request request",
+			"                                                , CancellationToken cancellationToken)",
+			"        {",
+			"           var returnValue = await _repository.Handle(request);",
+			"           await _mediator.Publish(returnValue, cancellationToken);",
+			"           return returnValue;",
+			"        }",
+			"    }",
+			"}"
+		],
+		"description": "Create a handler on MQRS"
+	}
+}

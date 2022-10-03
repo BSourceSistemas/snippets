@@ -1,0 +1,18 @@
+{
+	"Print to console": {
+		"scope": "csharp",
+		"prefix": "dtos",
+		"body": [
+			"using System;",
+			"",
+			"namespace <PROJECT>.Domain.DTO.<PATH>.<CLASS>",
+			"{",
+			"    public class <NAME>DTO",
+			"    {",
+					
+			"    }",
+			"}"
+		],
+		"description": "Generate a DTO class"
+	}
+}

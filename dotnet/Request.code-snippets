@@ -1,0 +1,21 @@
+{
+	"Print to console": {
+		"scope": "csharp",
+		"prefix": "req",
+		"body": [
+			"using MediatR;",
+			"using <PROJECT>.Domain.Interfaces.Requests;",
+			"",
+			"namespace <PROJECT>.Domain.Requests.<PATH>.<NAME>",
+			"{",
+			"    public class <NAME>Request : BaseListTenantUserRequest",
+			"                               , IRequest<<NAME>Response>",
+			"                               , ITargetTenantRequest",
+			"    {",
+			"           ",
+			"    }",
+			"}"
+		],
+		"description": "Create a request"
+	}
+}
