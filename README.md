@@ -1,4 +1,4 @@
-# snippets
+# Snippets
 A common snippets used in BSource projects.
 
 ##  Javascript
