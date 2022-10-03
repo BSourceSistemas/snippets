@@ -37,3 +37,17 @@ We plan to bring other snippets that we use here for javascript and C#, so we as
 
 Remembering that [BSource](https://www.bsource.com.br/) is a company working on digital transformation focused on the solution for your business.
 
+##  .NET
+
+Onde colocar os snippets: %HOMEPATH%\AppData\Roaming\Code\User\snippets
+
+Comandos para snippets dotnet:
+
+dtos	-> Gera uma classe DTO.
+res	-> Gera uma classe Response.
+req	-> Gera uma classe Request.
+irepo	-> Gera uma interface ppara repositório.
+hand	-> Gera uma classe Request Handler.
+prepos	-> Gera um repositório para o método POST.
+repos	-> Gera um repositório para todos os outros métodos HTTP.
+control -> Gera um controller com todos os métodos HTTP.
