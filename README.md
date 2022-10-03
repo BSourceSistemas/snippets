@@ -41,7 +41,7 @@ Remembering that [BSource](https://www.bsource.com.br/) is a company working on 
 
 Snippets path: %HOMEPATH%\AppData\Roaming\Code\User\snippets
 
-CQRS Route Snippets:
+CQRS Route Snippets:<br>
 dtos	-> Create a DTOs class.<br>
 res	-> Create a response class.<br>
 req	-> Create a request class.<br>
