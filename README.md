@@ -41,8 +41,7 @@ Remembering that [BSource](https://www.bsource.com.br/) is a company working on 
 
 Snippets path: %HOMEPATH%\AppData\Roaming\Code\User\snippets
 
-Call snippets on vscode:
-
+CQRS Route Snippets:
 dtos	-> Create a DTOs class.<br>
 res	-> Create a response class.<br>
 req	-> Create a request class.<br>
