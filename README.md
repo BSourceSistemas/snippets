@@ -44,10 +44,10 @@ Onde colocar os snippets: %HOMEPATH%\AppData\Roaming\Code\User\snippets
 Comandos para snippets dotnet:
 
 dtos	-> Gera uma classe DTO.<br>
-res	-> Gera uma classe Response.
-req	-> Gera uma classe Request.
-irepo	-> Gera uma interface ppara repositório.
-hand	-> Gera uma classe Request Handler.
-prepos	-> Gera um repositório para o método POST.
-repos	-> Gera um repositório para todos os outros métodos HTTP.
-control -> Gera um controller com todos os métodos HTTP.
+res	-> Gera uma classe Response.<br>
+req	-> Gera uma classe Request.<br>
+irepo	-> Gera uma interface ppara repositório.<br>
+hand	-> Gera uma classe Request Handler.<br>
+prepos	-> Gera um repositório para o método POST.<br>
+repos	-> Gera um repositório para todos os outros métodos HTTP.<br>
+control -> Gera um controller com todos os métodos HTTP.<br>
