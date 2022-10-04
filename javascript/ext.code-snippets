@@ -167,7 +167,7 @@
         "scope": "javascript",
         "prefix": "newvw",
         "body": [
-            "Ext.define('${1:app}.view.${2:context}.${3:feature}Controller', {",
+            "Ext.define('${1:app}.view.${2:context}.${3:feature}', {",
             "\textend: '${4:extendView}',",
             "\txtype: '${5:xtype}',",
             "\titems: [{",
